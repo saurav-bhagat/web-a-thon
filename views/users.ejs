@@ -1,4 +1,174 @@
-<%- include('header') %>
+<!DOCTYPE html>
+<html>
+<head>
+<title>TUMHAP - Happy Tummy</title>
+<!-- meta tags -- >
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- meta tags end -->
 
+<!-- links and plugins css-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--links ended -->
 
-<%- include('footer') %>
+</head>
+<body class="">
+  <div class="carousel">
+      <a class="carousel-item" href="#one!" id="kfc-caro"><img src="kfc.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="dominos.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="bk.jpg"></a>
+      <!-- <a class="carousel-item" href="#four!"><img src=""></a>
+      <a class="carousel-item" href="#five!"><img src=""></a> -->
+  </div>
+
+  <div class="container" id="generalad">
+    <div class="row">
+      <div class="col s6">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="kfc.jpg">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Hurry up!! This offer is for only very limited period of time</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Visit our website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="bk.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>Hurry up!! This offer is for only very limited period of time</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Visit our website</a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="bk.jpg">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Hurry up!! This offer is for only very limited period of time</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Visit our website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="dominos.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>Hurry up!! This offer is for only very limited period of time</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Visit our website</a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+  </div><!-- genreal ad ends-->
+  <div id="kfcpage" class="container">
+    <nav>
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav><br />
+    <a href="/cart" class="btn-floating btn-large waves-effect waves-light red right"><i class="material-icons">add_shopping_cart</i></a>
+    <h1 class="center white-text">POPULAR NOW</h1>
+
+    <br />
+    <div class="row white-text">
+
+      <div class="col s4">
+        <img src="kfc1.png"  />
+        <h5>TRIPLE TREAT</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+        <a class="waves-effect waves-light btn" style="background-color:#616161;">Add to cart</a>
+      </div>
+      <div class="col s4">
+        <img src="kfc2.png"  />
+        <h5>LARGE POPCORN</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+        <a class="waves-effect waves-light btn" style="background-color:#616161;">Add to cart</a>
+      </div>
+      <div class="col s4">
+        <img src="kfc3.png"  />
+        <h5>5 IN 1 GINGER BOX</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+        <a class="waves-effect waves-light btn" style="background-color:#616161;">Add to cart</a>
+      </div>
+
+    </div>
+  </div>
+  <button id="idd">click</button>
+  <span id="demo" class="white-text"></span>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+$("#idd").click(function(){
+  $.get("http://api.apixu.com/v1/current.json?key=1826907f0aa94330865115352172209&q=vellore", function(data, status){
+      alert("Data: " + data.current.temp_c + "\nStatus: " + status);
+      document.getElementById('demo').innerHTML = data.current.condition.text;
+  });
+});
+$(document).ready(function(){
+      $('.carousel').carousel();
+      $('#kfcpage').hide();
+
+  });
+  $('#kfc-caro').click(function(){
+    $('#generalad').hide();
+    $('#kfcpage').show();
+  });
+</script>
+</body>
+</html>

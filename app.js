@@ -24,7 +24,7 @@ const app = express();
 const Article = require('./models/article');
 var car = require('./routes/car');
 
-app.use('/users', car);
+
 
 //set view engine
 app.set('views',path.join(__dirname,'views'));
@@ -50,6 +50,8 @@ app.get('/', (req, res) => {
   });
 
 });
+
+
 app.get('/index2', function(req, res) {
   res.render('index2.ejs');
 });
@@ -58,6 +60,13 @@ app.get('/franchise', function(req, res) {
   res.render('franchise.ejs');
 });
 
+app.get('/cart', (req, res) => {
+  res.render('cart.ejs');
+})
+
+app.get('/userform', function(req, res) {
+  res.render('userform.ejs');
+});
 app.get('/users', function(req, res) {
   res.render('users.ejs');
 });
@@ -66,7 +75,14 @@ app.get('/administrator', function(req, res) {
   res.render('administrator.ejs');
 });
 
+app.get('/admin', function(req, res) {
+  res.render('admin.ejs');
+});
 
+
+app.get('/administratorform', function(req, res) {
+  res.render('administratorform.ejs');
+});
 app.get('/articles/add', (req, res) => {
   res.render('add_article', {
     title:'Add article'

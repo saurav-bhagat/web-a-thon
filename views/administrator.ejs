@@ -1,4 +1,150 @@
-<%- include('header') %>
+<!DOCTYPE html>
+<html>
+<head>
+ <title>TUMHAP - Happy Tummy</title>
+ <!-- meta tags -- >
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <!-- meta tags end -->
+
+ <!-- links and plugins css-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+  type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <!--links ended -->
+<style type="text/css">
+  #accept:hover{
+    color: white;
+  }
+</style>
+</head>
+<body class="">
+  <div class="container">
+    <h3 class="white-text">These are the requests for today:</h3>
+    <div class="row">
+        <div class="col s12 m6" id="hideit">
+          <div class="card darken-1">
+            <div class="card-content">
+              <span class="card-title">KFC</span>
+              <p>We are a new Restaurant in Mumbai which is recognised on Zomato with a rating of 9.5 , we want to request for advertisement</p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger #616161 grey darken-2" href="#modal1" >Modal</a>
+
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Please fill this details!</h4>
+                  <div class="row">
+                    <div class="input-field col m12 s6">
+                      <input placeholder="Username" id="first_name" type="text" class="validate">
+                      <label for="first_name">Enter popular food</label>
+                    </div>
+                    <div class="input-field col m12 s6">
+                      <input placeholder="Password" id="password" type="text" class="validate">
+                      <label for="password">Enter no. of branches</label>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="input-field col m12 s6">
+                      <input placeholder="Username" id="first_name" type="text" class="validate">
+                      <label for="first_name">Enter google drive link for advertisement:</label>
+                    </div>
+                    <div class="input-field col m12 s6">
+                      <input placeholder="Password" id="password" type="text" class="validate">
+                      <label for="password">Enter no. of branches</label>
+                    </div>
+                    <!-- <div class="right" >
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                         <i class="material-icons right">send</i>
+                       </button>
+                    </div> -->
+
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+                </div>
+              </div>
+                <a class="waves-effect waves-light btn modal-trigger right #616161 grey darken-2" href="#" id="decline1">Decline</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card darken-1">
+            <div class="card-content">
+              <span class="card-title">BASKIN ROBINS</span>
+              <p>We are a new Restaurant in Mumbai which is recognised on Zomato with a rating of 9.5 , we want to request for advertisement</p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger #616161 grey darken-2" href="#modal1" >Modal</a>
+
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Please fill this details!</h4>
+                  <div class="row">
+                    <div class="input-field col m12 s6">
+                      <input placeholder="Username" id="first_name" type="text" class="validate">
+                      <label for="first_name">Enter popular food</label>
+                    </div>
+                    <div class="input-field col m12 s6">
+                      <input placeholder="Password" id="password" type="text" class="validate">
+                      <label for="password">Enter no. of branches</label>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="input-field col m12 s6">
+                      <input placeholder="Username" id="first_name" type="text" class="validate">
+                      <label for="first_name">Enter google drive link for advertisement:</label>
+                    </div>
+                    <div class="input-field col m12 s6">
+                      <input placeholder="Password" id="password" type="text" class="validate">
+                      <label for="password">Enter no. of branches</label>
+                    </div>
+                    <!-- <div class="right" >
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                         <i class="material-icons right">send</i>
+                       </button>
+                    </div> -->
+
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+                </div>
+              </div>
+                <a class="waves-effect waves-light btn modal-trigger right #616161 grey darken-2" href="#">Decline</a>
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- Row end -->
 
 
-<%- include('footer') %>
+  </div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+ // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+ $('.modal').modal();
+ $('#decline1').click(function(){
+   $('#hideit').hide();
+ });
+});
+</script>
+</body>
+</html>
