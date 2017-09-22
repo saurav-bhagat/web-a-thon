@@ -23,8 +23,8 @@ router.get('/brands', function(req, res) {
 })
 
 //
-router.get('/models', function(req, res) {
-  res.send('Audi Q7, BMW X5, Mercedes GL')
+router.get('/index2', function(req, res) {
+  res.render('index2')
 })
 
 module.exports = router;

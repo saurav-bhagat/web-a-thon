@@ -50,6 +50,9 @@ app.get('/', (req, res) => {
   });
 
 });
+app.get('/index2', function(req, res) {
+  res.render('index2.ejs');
+});
 
 
 app.get('/articles/add', (req, res) => {
