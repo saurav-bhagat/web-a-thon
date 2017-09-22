@@ -14,4 +14,19 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   console.log("I know jquery");
+  $('#administrator').hover(function(){
+    $(this).addClass('z-depth-5');
+  },function(){
+    $(this).removeClass('z-depth-5');
+  });
+  $('#users').hover(function(){
+    $(this).addClass('z-depth-5');
+  },function(){
+    $(this).removeClass('z-depth-5');
+  });
+  $('#resturant').hover(function(){
+    $(this).addClass('z-depth-5');
+  },function(){
+    $(this).removeClass('z-depth-5');
+  });
 });

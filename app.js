@@ -54,6 +54,18 @@ app.get('/index2', function(req, res) {
   res.render('index2.ejs');
 });
 
+app.get('/franchise', function(req, res) {
+  res.render('franchise.ejs');
+});
+
+app.get('/users', function(req, res) {
+  res.render('users.ejs');
+});
+
+app.get('/administrator', function(req, res) {
+  res.render('administrator.ejs');
+});
+
 
 app.get('/articles/add', (req, res) => {
   res.render('add_article', {

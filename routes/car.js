@@ -23,8 +23,6 @@ router.get('/brands', function(req, res) {
 })
 
 //
-router.get('/index2', function(req, res) {
-  res.render('index2')
-})
+
 
 module.exports = router;
