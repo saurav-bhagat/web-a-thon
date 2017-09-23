@@ -5,18 +5,18 @@ const bodyParser  =   require('body-parser')
 
 
 //connect databasemongodb://localhost/nodekb
-mongoose.connect('mongodb://16BIT0104:^Saurav123#@ds139480.mlab.com:39480/mess-at-hand');
-var db = mongoose.connection;
+// mongoose.connect('mongodb://16BIT0104:^Saurav123#@ds139480.mlab.com:39480/mess-at-hand');
+// var db = mongoose.connection;
 
 //check connection
-db.once('open', function() {
-  console.log("connected to mongodb");
-});
+// db.once('open', function() {
+//   console.log("connected to mongodb");
+// });
 
 //check for db errprs
-db.on('error',function(err){
-  console.log(err);
-});
+// db.on('error',function(err){
+//   console.log(err);
+// });
 //init app
 const app = express();
 
