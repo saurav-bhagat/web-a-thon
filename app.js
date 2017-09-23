@@ -57,15 +57,19 @@ app.get('/index2', function(req, res) {
 });
 
 app.get('/franchise', function(req, res) {
+  res.render('franchiseform.ejs');
+});
+
+app.get('/franpage', function(req, res) {
   res.render('franchise.ejs');
 });
 
 app.get('/cart', (req, res) => {
-  res.render('cart.ejs');
+  res.render('cart1.ejs');
 })
 
 app.get('/userform', function(req, res) {
-  res.render('userform.ejs');
+  res.render('userform1.ejs');
 });
 app.get('/users', function(req, res) {
   res.render('users.ejs');
@@ -76,7 +80,7 @@ app.get('/administrator', function(req, res) {
 });
 
 app.get('/admin', function(req, res) {
-  res.render('admin.ejs');
+  res.render('admin1.ejs');
 });
 
 
