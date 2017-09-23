@@ -1,0 +1,7 @@
+{
+  "name": "webathon tumhap",
+  "description": "A resturant management app",
+  "repository": "https://github.com/saurav-bhagat/web-a-thon",
+  "keywords": ["node","express","tumhap","webathon","first prize"],
+  "image": "heroku/nodejs"
+}
