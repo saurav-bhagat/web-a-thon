@@ -112,6 +112,6 @@ app.post('/articles/add', (req, res) => {
 });
 
 //start server
-app.listen(3003, () => {
+app.listen(process.env.PORT, () => {
   console.log("server started at port 3003");
 });
