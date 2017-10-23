@@ -3,7 +3,7 @@ const path        =   require('path');
 const mongoose    =   require('mongoose');
 const bodyParser  =   require('body-parser')
 
-
+//for hactober fest-by ekansh
 //connect databasemongodb://localhost/nodekb
 // mongoose.connect('mongodb://16BIT0104:^Saurav123#@ds139480.mlab.com:39480/mess-at-hand');
 // var db = mongoose.connection;
